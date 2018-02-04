@@ -2,7 +2,7 @@
 SET /P _inputname= Please enter a name for your jar file:
 echo Compileing .java
 javac -d temp *.java
-SET /P _inputmain= Please enter a name of your Main class file:
+SET /P _inputmain= Please enter the name of your Main class file:
 echo Building .jar
 cd ./temp
 jar cfe "%_inputname%".jar "%_inputmain%" *.class
